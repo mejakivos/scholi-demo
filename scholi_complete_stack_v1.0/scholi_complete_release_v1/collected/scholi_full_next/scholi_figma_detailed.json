@@ -1,0 +1,76 @@
+{
+  "name": "Scholi - Figma JSON Export v1.0 (Detailed)",
+  "pages": [
+    {
+      "name": "Design System",
+      "components": [
+        "Button/Primary",
+        "Button/Secondary",
+        "Chip/Child",
+        "Card/Activity",
+        "Modal/ActivityDetail"
+      ]
+    },
+    {
+      "name": "Web Screens",
+      "frames": [
+        {
+          "id": "web_dashboard",
+          "name": "WEB / Dashboard / Aggregated",
+          "width": 1280,
+          "height": 800
+        },
+        {
+          "id": "web_calendar",
+          "name": "WEB / Calendar / Child - Month",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "id": "web_activity",
+          "name": "WEB / Modal / Activity Detail",
+          "width": 720,
+          "height": 600
+        }
+      ]
+    },
+    {
+      "name": "Mobile Screens",
+      "frames": [
+        {
+          "id": "mobile_dashboard",
+          "name": "MOBILE / Dashboard / Aggregated",
+          "width": 375,
+          "height": 812
+        },
+        {
+          "id": "mobile_activity",
+          "name": "MOBILE / Bottom Sheet / Activity Detail",
+          "width": 375,
+          "height": 600
+        },
+        {
+          "id": "mobile_create",
+          "name": "MOBILE / Create / Quick Event",
+          "width": 375,
+          "height": 812
+        }
+      ]
+    }
+  ],
+  "tokens": {
+    "colors": {
+      "primary": "#2563EB",
+      "success": "#10B981",
+      "bg_light": "#F9FAFB",
+      "bg_dark": "#111827"
+    },
+    "typography": {
+      "font": "Inter",
+      "h1": 28,
+      "h2": 22,
+      "body": 16
+    }
+  },
+  "notes": "This JSON is a developer-friendly export. Import into Figma via plugin or use as reference."
+}

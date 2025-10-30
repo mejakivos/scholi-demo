@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "colors": {
+    "light": {
+      "background": "#F9FAFB",
+      "surface": "#FFFFFF",
+      "primary": "#2563EB",
+      "success": "#10B981",
+      "text": "#111827",
+      "muted": "#6B7280",
+      "border": "#E5E7EB"
+    },
+    "dark": {
+      "background": "#111827",
+      "surface": "#1F2937",
+      "primary": "#3B82F6",
+      "success": "#34D399",
+      "text": "#F9FAFB",
+      "muted": "#9CA3AF",
+      "border": "#374151"
+    }
+  },
+  "typography": {
+    "font": "Inter, system-ui, -apple-system, 'Segoe UI', Roboto",
+    "h1": "28px",
+    "h2": "22px",
+    "body": "16px"
+  },
+  "spacing": "8px"
+}

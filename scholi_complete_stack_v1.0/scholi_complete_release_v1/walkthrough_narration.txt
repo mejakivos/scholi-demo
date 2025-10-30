@@ -1,0 +1,9 @@
+Welcome to Scholi — a simple calendar for parents, teachers and schools.
+In this short demo I’ll show you how to sign in, find your child’s activities, and how teachers can create events.
+
+First, sign in as a parent using the seeded credentials: aisha.khan@example.com, password ParentPass123!
+You’ll land on the dashboard which shows upcoming activities across your children. Use the child chips to filter, and tap any event to see details, attachments and reminder options.
+
+Teachers can create activities using the Create Activity screen — enter title, start and end times, assign to children or a class, and publish. The event appears immediately on the calendar for parents.
+
+You can sync events to your personal calendar and set notification lead times in settings. That’s Scholi — one place for your child’s schedule. Thank you for trying Scholi!
