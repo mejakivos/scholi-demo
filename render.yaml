@@ -20,7 +20,7 @@ services:
         value: "replace_me"
     repo: https://github.com/mejakivos/scholi-demo
 
-  - type: static
+  - type: static_site
     name: scholi-frontend
     branch: main
     buildCommand: npm install && npm run build
@@ -29,5 +29,6 @@ services:
       - key: REACT_APP_API_URL
         value: "/"
     repo: https://github.com/mejakivos/scholi-demo
+
 
 
