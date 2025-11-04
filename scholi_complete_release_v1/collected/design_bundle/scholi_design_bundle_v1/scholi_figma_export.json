@@ -1,0 +1,15 @@
+{
+  "file": "Scholi mock export",
+  "screens": [
+    "login.png",
+    "parent_dashboard.png",
+    "teacher_dashboard.png",
+    "child_detail.png",
+    "calendar_view.png",
+    "create_activity.png"
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ]
+}

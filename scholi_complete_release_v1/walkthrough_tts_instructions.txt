@@ -1,0 +1,16 @@
+Walkthrough narration - generate audio locally
+
+Option A: gTTS (Python)
+1) pip install gTTS
+2) python - <<'PY'
+from gtts import gTTS
+s = open('walkthrough_narration.txt').read()
+TTS = gTTS(s, lang='en')
+TTS.save('walkthrough_narration.mp3')
+PY
+
+Option B: macOS 'say' to MP3
+say -v Samantha -o walkthrough_narration.aiff "$(cat walkthrough_narration.txt)" && ffmpeg -i walkthrough_narration.aiff walkthrough_narration.mp3
+
+Option C: Linux 'espeak' (lower quality)
+espeak -f walkthrough_narration.txt -w walkthrough_narration.wav && ffmpeg -i walkthrough_narration.wav walkthrough_narration.mp3

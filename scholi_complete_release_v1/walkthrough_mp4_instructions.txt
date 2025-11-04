@@ -1,0 +1,6 @@
+To convert walkthrough.gif -> walkthrough.mp4 (locally), use ffmpeg:
+
+ffmpeg -i walkthrough.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" walkthrough.mp4
+
+Then combine with narration:
+ffmpeg -i walkthrough.mp4 -i walkthrough_narration.mp3 -c:v copy -c:a aac -shortest scholi_walkthrough_final.mp4

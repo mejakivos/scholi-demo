@@ -1,0 +1,126 @@
+{
+  "name": "Scholi - Figma Full Export v1.0",
+  "description": "Detailed frames, components, tokens for Scholi. Light + Dark variants included. Flat frames.",
+  "pages": [
+    {
+      "name": "01 - Design System",
+      "frames": [
+        {
+          "id": "ds_colors",
+          "name": "Colors - Light & Dark",
+          "elements": [
+            "primary",
+            "success",
+            "bg",
+            "text",
+            "muted"
+          ]
+        },
+        {
+          "id": "ds_typo",
+          "name": "Typography",
+          "elements": [
+            "H1",
+            "H2",
+            "Body",
+            "Small"
+          ]
+        },
+        {
+          "id": "ds_components",
+          "name": "Components",
+          "elements": [
+            "Button/Primary",
+            "Button/Secondary",
+            "Chip/Child",
+            "Card/Activity",
+            "Modal/ActivityDetail",
+            "Avatar"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "02 - Web Screens",
+      "frames": [
+        {
+          "id": "web_dashboard",
+          "name": "WEB / Dashboard / Aggregated",
+          "width": 1280,
+          "height": 800
+        },
+        {
+          "id": "web_calendar_month",
+          "name": "WEB / Calendar / Child - Month",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "id": "web_activity_detail",
+          "name": "WEB / Modal / Activity Detail",
+          "width": 720,
+          "height": 600
+        }
+      ]
+    },
+    {
+      "name": "03 - Mobile Screens",
+      "frames": [
+        {
+          "id": "mobile_dashboard",
+          "name": "MOBILE / Dashboard / Aggregated",
+          "width": 375,
+          "height": 812
+        },
+        {
+          "id": "mobile_activity_sheet",
+          "name": "MOBILE / Bottom Sheet / Activity Detail",
+          "width": 375,
+          "height": 600
+        },
+        {
+          "id": "mobile_create",
+          "name": "MOBILE / Create / Quick Event",
+          "width": 375,
+          "height": 812
+        }
+      ]
+    }
+  ],
+  "tokens": {
+    "colors": {
+      "light": {
+        "primary": "#2563EB",
+        "success": "#10B981",
+        "bg": "#F9FAFB",
+        "surface": "#FFFFFF",
+        "text": "#111827",
+        "muted": "#6B7280"
+      },
+      "dark": {
+        "primary": "#3B82F6",
+        "success": "#34D399",
+        "bg": "#111827",
+        "surface": "#1F2937",
+        "text": "#F9FAFB",
+        "muted": "#9CA3AF"
+      }
+    },
+    "typography": {
+      "font": "Inter",
+      "h1": "28px",
+      "h2": "22px",
+      "h3": "18px",
+      "body": "16px",
+      "small": "13px"
+    },
+    "spacing": {
+      "base": "8px"
+    }
+  },
+  "assets": [
+    "/branding/scholi-logo.svg",
+    "/mockups/light/parent_dashboard.png",
+    "/mockups/dark/parent_dashboard.png"
+  ]
+}
