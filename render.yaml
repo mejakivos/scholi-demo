@@ -4,8 +4,6 @@ services:
     env: docker
     branch: main
     dockerfilePath: school_calendar_nest_prisma/Dockerfile
-    buildCommand: npm install && npm run build
-    startCommand: node dist/main.js
     envVars:
       - key: DATABASE_URL
         fromDatabase:
@@ -30,6 +28,7 @@ databases:
   - name: scholi-db
     plan: starter
     region: oregon
+
 
 
 
