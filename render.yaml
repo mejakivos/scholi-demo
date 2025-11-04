@@ -4,10 +4,9 @@ services:
     env: docker
     branch: main
     dockerfilePath: school_calendar_nest_prisma/Dockerfile
-    plan: free
     envVars:
       - key: DATABASE_URL
-        value: "postgres://user:password@host:5432/dbname" # temporary for demo
+        value: "postgres://user:password@localhost:5432/demo"
       - key: JWT_SECRET
         value: "replace_me"
     repo: https://github.com/mejakivos/scholi-demo
@@ -18,7 +17,6 @@ services:
     branch: main
     buildCommand: npm install && npm run build
     staticPublishPath: school_calendar_deliverables/frontend/dist
-    plan: free
     envVars:
       - key: REACT_APP_API_URL
         value: "/"
