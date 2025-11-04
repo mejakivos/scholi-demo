@@ -1,8 +1,3 @@
-databases:
-  - name: scholi-db
-    plan: starter
-    region: oregon
-
 services:
   - type: web
     name: scholi-backend
@@ -20,15 +15,22 @@ services:
         value: "replace_me"
     repo: https://github.com/mejakivos/scholi-demo
 
-  - type: static_site
+  - type: web
     name: scholi-frontend
+    env: static
     branch: main
     buildCommand: npm install && npm run build
-    publishPath: school_calendar_deliverables/frontend/dist
+    staticPublishPath: school_calendar_deliverables/frontend/dist
     envVars:
       - key: REACT_APP_API_URL
         value: "/"
     repo: https://github.com/mejakivos/scholi-demo
+
+databases:
+  - name: scholi-db
+    plan: starter
+    region: oregon
+
 
 
 
