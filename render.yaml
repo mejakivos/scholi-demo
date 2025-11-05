@@ -4,12 +4,10 @@ databases:
     region: oregon
 
 services:
-  # 🟢 Backend Service (NestJS)
   - type: web
     name: scholi-backend
     env: docker
     branch: main
-    rootDir: backend
     dockerfilePath: backend/Dockerfile
     envVars:
       - key: DATABASE_URL
@@ -17,19 +15,20 @@ services:
           name: scholi-db
           property: connectionString
       - key: JWT_SECRET
-        value: "replace_me_with_a_real_secret"
+        value: "replace_me"
+    repo: https://github.com/mejakivos/scholi-demo
 
-  # 🔵 Frontend Service (React/Vite)
   - type: web
     name: scholi-frontend
     env: static
     branch: main
-    rootDir: frontend
     buildCommand: npm install && npm run build
-    staticPublishPath: dist
+    staticPublishPath: school_calendar_deliverables/frontend/dist
     envVars:
       - key: REACT_APP_API_URL
-        value: "https://scholi-backend.onrender.com"
+        value: "/"
+    repo: https://github.com/mejakivos/scholi-demo
+
 
 
 
