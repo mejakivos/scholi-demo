@@ -1,26 +1,35 @@
+databases:
+  - name: scholi-db
+    plan: free
+    region: oregon
+
 services:
+  # 🟢 Backend Service (NestJS)
   - type: web
     name: scholi-backend
     env: docker
     branch: main
+    rootDir: backend
     dockerfilePath: backend/Dockerfile
     envVars:
       - key: DATABASE_URL
-        value: "postgres://user:password@localhost:5432/demo"
+        fromDatabase:
+          name: scholi-db
+          property: connectionString
       - key: JWT_SECRET
-        value: "replace_me"
-    repo: https://github.com/mejakivos/scholi-demo
+        value: "replace_me_with_a_real_secret"
 
+  # 🔵 Frontend Service (React/Vite)
   - type: web
     name: scholi-frontend
     env: static
     branch: main
+    rootDir: frontend
     buildCommand: npm install && npm run build
-    staticPublishPath: school_calendar_deliverables/frontend/dist
+    staticPublishPath: dist
     envVars:
       - key: REACT_APP_API_URL
-        value: "/"
-    repo: https://github.com/mejakivos/scholi-demo
+        value: "https://scholi-backend.onrender.com"
 
 
 
