@@ -3,7 +3,7 @@ services:
     name: scholi-backend
     env: docker
     branch: main
-    dockerfilePath: school_calendar_nest_prisma/Dockerfile
+    dockerfilePath: backend/Dockerfile
     envVars:
       - key: DATABASE_URL
         value: "postgres://user:password@localhost:5432/demo"
